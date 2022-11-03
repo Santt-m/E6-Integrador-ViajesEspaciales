@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <title>Viajes espaciales | Inicio</title>
+</head>
+<body>
+    <main class="section-login">
+        <nav>
+            <label for="label-menu" class="menu-label">
+                <img class="icon-menu" src="./assets/img/iconos/menu-icon.png" alt="Icono menu desplegable">
+            </label>
+            <input type="checkbox" name="" id="label-menu">
+            <ul class="nav-list">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./registro.html">Registro</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+        <section class="section-login">
+            <div class="cont-login-form">
+                <form action="">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <label for="user">Usuario: </label><input type="text" name="user" id="user" placeholder="Tu usuario" required>
+                    <label for="pasword">contraseña: </label><input type="password" name="password" id="password" placeholder="contraseña" required>
+                    <label for="email">Email: </label><input type="email" name="email" id="email" placeholder="tu-email@example.com" required>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Genero</legend>
+                        <label for="male">Hombre</label><input type="radio" id="male" name="gender" value="male">
+                        <label for="female">Mujer</label><input type="radio" id="female" name="gender" value="female">
+                        <label for="otro">Otro</label><input type="radio" id="otro" name="gender" value="otro">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Noticias</legend>
+                        <p>Marque las actualizaciones que quiere recibir.</p>
+                        <label for="viajes">Viajes</label><input type="checkbox" name="viajes" id="viajes" value="viajes">
+                        <label for="promociones">Propomociones</label><input type="checkbox" name="promociones" id="promociones" value="promociones">
+                        <label for="spam">spam</label><input type="checkbox" name="spam" id="spam" value="spam">
+                    </fieldset>
+                    <input class="submit" type="submit" value="iniciar sesion !">
+                </form>
+
+            </div>
+        </section>
+    </main>
+</body>

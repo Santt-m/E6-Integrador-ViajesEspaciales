@@ -117,12 +117,13 @@ main{
 /* estilos nav */
 
 nav{
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 20px;
     position: sticky;
     top: 5px;
     padding: 20px;
     width: 95%;
+    z-index: 1;
 
     background-color: rgba(128, 128, 128, 0.734);
     border-radius: 15px;
@@ -153,8 +154,6 @@ nav ul li a{
 nav input{
     display: none;
 }
-
-
 
 /* Estilos section About Us */
 
@@ -504,6 +503,81 @@ footer{
     background-color: blueviolet;
 }
 
+/* section login */
+
+.section-login{
+    background-image: url(./img/background/milky-way.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height : 100vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cont-login-form{
+    background-color: rgba(0, 0, 255, 0.488);
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    box-shadow: 21px 22px 24px 14px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 21px 22px 24px 14px rgba(0,0,0,0.66);
+    -moz-box-shadow: 21px 22px 24px 14px rgba(0,0,0,0.66);
+}
+.cont-login-form form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cont-login-form label{
+    width: 40%;
+    margin: 5px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-indent: 12px;
+    color: white;
+}
+.cont-login-form input{
+    border-radius: 10px;
+    padding: 2px;
+    margin: 5px;
+    width: 40%;
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-indent: 12px;
+    color: blueviolet;
+}
+.submit{
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-indent: 12px;
+    color: white;
+    font-weight: bold;
+}
+.submit:hover{
+    background-color:#FF005C;
+    color: white;
+}
+/* form registro */
+
+fieldset{
+    width: 100%;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: red;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+}
+fieldset p{
+    width: 100%;
+    font-size: 12px;
+}
 /* Animaciones */
 
 .fadeInUp {
