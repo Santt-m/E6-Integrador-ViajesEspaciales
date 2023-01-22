@@ -8,7 +8,7 @@
     list-style-type: none;
 }
 /* Testing */
-/* div{
+div{
     border: 1px solid red;
 }
 section{
@@ -17,7 +17,7 @@ section{
 }
 img{
     border: 1px solid white;
-} */
+}
 
 /* estilos principales */
 body{
@@ -148,6 +148,7 @@ nav ul li a{
     height: 75px;
 }
 /* oculto el menu desplegable */
+
 .menu-label{
     display: none;
 }
@@ -184,7 +185,7 @@ nav input{
     width: 290px;
     height: 350px;
 
-    background-color: rgba(128, 128, 128, 0.452);
+    background-color: rgba(48, 47, 47, 0.726);
     border-radius: 15px;
 
     display: flex;
@@ -218,6 +219,7 @@ nav input{
     margin: 5px;
     font-family: 'Fuzzy Bubbles', cursive;
     text-indent: 20px;
+    font-weight: bold;
     color: white;
 }
 .aboutUs-Card-txt a{
@@ -284,7 +286,7 @@ nav input{
     width: 290px;
     height: 450px;
     
-    background-color: rgba(128, 128, 128, 0.452);
+    background-color: rgba(48, 47, 47, 0.753);
     border-radius: 15px;
 
     display: flex;
@@ -295,7 +297,7 @@ nav input{
     transition: transform 1s ease;
 }
 .productos-card:hover{
-    background-color: rgba(137, 43, 226, 0.658);
+    background-color: rgba(137, 43, 226, 0.826);
     transform: scale(1.2);
 }
 .productos-card img{
@@ -335,9 +337,9 @@ nav input{
     font-family: 'Fuzzy Bubbles', cursive;
     text-indent: 0px;
     font-weight: bold;
-    color: green;
-    background-color: rgba(241, 1, 1, 0.466);
-    padding: 2px;
+    color: rgb(251, 255, 4);
+    /* background-color: rgba(241, 1, 1, 0.807); */
+    padding: 3px;
     border-radius: 5px;
 }
 .productos-card-txt-price a{
@@ -401,6 +403,7 @@ nav input{
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
+    letter-spacing: 2px;
     font-size: 20px;
     color: white;
 }
@@ -414,6 +417,7 @@ nav input{
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     font-size: 20px;
+    letter-spacing: 2px;
     color: yellow;
 }
 .contacto-txt a:hover{
@@ -519,7 +523,7 @@ footer{
     align-items: center;
 }
 .cont-login-form{
-    background-color: rgba(0, 0, 255, 0.488);
+    background-color: rgba(0, 0, 255, 0.873);
     width: 50%;
     height: 50%;
     padding: 10px;
@@ -612,8 +616,9 @@ fieldset p{
     transform: none;
     }
     }
+
 .title {
-    color:darkblue;
+    color:blue;
 	animation-name: focus-in-contract;
 	animation-duration: 3s;
 	animation-timing-function: ease;
@@ -633,6 +638,7 @@ fieldset p{
 		opacity:1;
 	}
 }
+
 .sub-title {
 		animation-name: sub-title;
 		animation-duration: 3s;
@@ -652,12 +658,12 @@ fieldset p{
 		opacity:1;
 	}
 }
-
     @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
 .rotate-vert-center {
 	-webkit-animation: rotate-vert-center 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 	animation: rotate-vert-center 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
@@ -703,7 +709,7 @@ fieldset p{
         transform-origin: bottom left;
     }
     .anim-grad:hover {
-        background: linear-gradient(355deg, #bf08db47, #1443fd53, #08cebe67);
+        background: linear-gradient(355deg, #bf08dbd1, #1443fdda, #ce1908d1);
         background-size: 600% 600%;
     
         -webkit-animation: gradient-anim 10s ease infinite;
