@@ -471,6 +471,7 @@ nav input{
 
 footer{
     width: 100%;
+    max-width: 1920px;
     min-height: 5vh;
     display: flex;
     flex-direction: row;
