@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Oswald&family=Source+Sans+Pro:wght@300&display=swap');
 
+:root {
+
+    /* backgrounds colors */
+
+    --background: black;
+    --menuBackground: rgba(128, 128, 128, 0.734);
+
+    --btnBackground: rgba(48, 47, 47, 0.192);
+    --btnHover: white;
+    --btnCategoryHover: rgba(44, 80, 158, 0.575);
+
+
+    /* text colors */
+
+    --btnText: white;
+
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -147,13 +167,47 @@ nav ul li a{
     width: 75px;
     height: 75px;
 }
-/* oculto el menu desplegable */
-
+/* se oculta el icono del menu en pantallas grandes */
 .menu-label{
     display: none;
 }
-nav input{
-    display: none;
+
+.btn-conteiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+/* imgs */
+.user-label {
+    border-radius: 390px;
+    transition: transform 1s ease;
+}
+.user-label img {
+    width: 35px;
+    height: 35px;
+    background-color: var(--btnBackground);
+    border-radius: 390px;
+}
+.user-label:hover{
+    background-color: var(--btnHover);
+    transform: scale(1.2);
+}
+.cart-label{
+    border-radius: 390px;
+    transition: transform 1s ease;
+}
+.cart-label img{
+    width: 35px;
+    height: 35px;
+    background-color: var(--btnBackground);
+    border-radius: 390px;
+}
+.cart-label:hover{
+    background-color: var(--btnHover);
+    transform: scale(1.2);
 }
 
 /* Estilos section About Us */
@@ -278,6 +332,60 @@ nav input{
     justify-content: space-evenly;
     align-items: center;
     gap: 40px;
+}
+
+/* categorias */
+.cont-categorias{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+
+}
+.btnCategory {
+    width: 150px;
+    height: 100px;
+    background: var(--btnBackground);
+    color: var();
+    border: none;
+    padding: 5px;
+    color: var(--btnText);
+    letter-spacing: 1.5px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btnCategory:hover {
+    background: var(--btnCategoryHover);
+    color: var(--btnText);
+}
+
+.btn-load{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 50px;
+    background: var(--btnBackground);
+    color: var();
+    border: none;
+    padding: 5px;
+    color: var(--btnText);
+    letter-spacing: 1.5px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-load:hover{
+    background: var(--btnCategoryHover);
+    color: var(--btnText);
 }
 
     /* cards */
@@ -583,6 +691,7 @@ fieldset p{
     width: 100%;
     font-size: 12px;
 }
+
 /* Animaciones */
 
 .fadeInUp {
@@ -807,11 +916,11 @@ fieldset p{
     }
     .nav-list{
         position: absolute;
-        top: 110px;
+        top: 115px;
         left: 5%;
         right: 5%;
         padding: 10px;
-        background-color: rgba(0, 0, 255, 0.447);
+        background-color: var(--menuBackground);
         gap: 20px;
         display: none;
         border:5px solid grey;
@@ -838,4 +947,17 @@ fieldset p{
     footer{
         flex-direction: column;
     }
+}
+@media (max-width: 425px){
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* clases manejadas por Js */
+
+.is-active{
+    display: flex;
 }

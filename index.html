@@ -10,6 +10,31 @@
 </head>
 <body>
     <main>
+        <nav>
+            <div class="menu-label">
+                <img class="icon-menu" src="./assets/img/iconos/menu-icon.png" alt="Icono menu desplegable">
+            </div>
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#aboutUs">Nosotros</a></li>
+                <li><a href="#productos">Viajes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <a href="./registro.html">Registro</a>
+                </li>
+                <li>
+                    <a href="./login.html">Login</a>
+                </li>
+                <div class="btn-conteiner">
+                    <div class="user-label">
+                        <img src="./assets/img/user.png" alt="icono usuario desplegable">
+                    </div>
+                    <div class="cart-label">
+                        <img class="icon-menu" src="./assets/img/cart-img.png" alt="Icono carrito desplegable">
+                    </div>
+                </div>
+            </ul>
+        </nav>
         <section class="section-principal" id="inicio">
             <div class="cont-logo fadeInUp">
                 <img class="logo-img" src="./assets/img/proton.png" alt="Logo">
@@ -26,21 +51,7 @@
                 <p class="sub-title">"Cuando somos testigos de la majestuosidad y fragilidad de la Tierra desde el espacio, algo dentro de nosotros cambia. Creemos que esta transformación traerá innumerables beneficios a la vida en nuestro hermoso planeta."</p>
                 <p class="principal-sub-2 sub-title">- Professor Stephen Hawking</p>
             </div>
-        </section>
-        <nav>
-            <label for="label-menu" class="menu-label">
-                <img class="icon-menu" src="./assets/img/iconos/menu-icon.png" alt="Icono menu desplegable">
-            </label>
-            <input type="checkbox" name="" id="label-menu">
-            <ul class="nav-list">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#aboutUs">Nosotros</a></li>
-                <li><a href="#productos">Viajes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="./registro.html">Registro</a></li>
-                <li><a href="./login.html">Login</a></li>
-            </ul>
-        </nav>
+        </section>        
         <section class="section-aboutUs" id="aboutUs">
             <div class="cont-aboutUs-card">
                 <div class="aboutUs-card anim-grad">
@@ -77,48 +88,15 @@
             </div>
         </section>
         <section class="section-productos" id="productos">
-            <div class="cont-productos-cards">
-                <div class="productos-card">
-                    <img src="./assets/img/pruductos/spacex-moon.jpg" alt="Space X moon">
-                    <div class="productos-card-txt">
-                        <h4>🚀 Viaje a la luna</h4>
-                        <p>📡​ De la mano de Space X vamos a su base lunar.</p>
-                        <p>🌑​ El viaje incluye hotel, desayuno y guia de tours</p>
-                        <p>🧾​ Requiere curso de entrenamiento en las instalaciones de space x.</p>
-                        <div class="productos-card-txt-price">
-                            <p>​💰​ 500.000 USDT</p>
-                            <a class="anim-blur" href="#">Reserva</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="productos-card">
-                    <img src="./assets/img/pruductos/virginGalactic.png" alt="Virgin Galactic">
-                    <div class="productos-card-txt">
-                        <h4>✈️​ Vuelo espacial</h4>
-                        <p>🚀 Experimenta la ingravidez.</p>
-                        <p>🤳🏼 las impresionantes vistas de la Tierra.</p>
-                        <p>☁️ Alto nivel de confort.</p>
-                        <p>🌌 Una experiencia que transformara tu vida a traves del inovador y exclusivo servicio de Virgin Galactic.</p>
-                        <div class="productos-card-txt-price">
-                            <p>​💰​ 300.000 USDT</p>
-                            <a class="anim-blur" href="#">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="productos-card">
-                    <img src="./assets/img/pruductos/spacexMars.webp" alt="Space x mars">
-                    <div class="productos-card-txt">
-                        <h4>🔴 Viaja a Marte​</h4>
-                        <p>🚀 Con Space X y su increible cohete Falcon Heavy viajaremos al planeta Marte.</p>
-                        <p>🌑​ El viaje incluye hotel, desayuno y guia de tours</p>
-                        <p>🧾​ Requiere curso de entrenamiento en las instalaciones de space x.</p>
-                        <div class="productos-card-txt-price">
-                            <p>​💰​ 1.000.000 USDT</p>
-                            <a class="anim-blur" href="#">Reserva</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="cont-categorias">
+                <button class="btnCategory active">🧲Todo</button>
+                <button class="btnCategory" data-category="espaciales">🚀 Espaciales</button>
+                <button class="btnCategory" data-category="cruseros">🛥️ Cruceros</button>
             </div>
+            <div class="cont-productos-cards">
+            <!-- aca se renderizan los productos -->
+            </div>
+            <button class="btn-load">Ver Más</button>
         </section>
         <section class="section-contacto" id="contacto">
             <div class="cont-contacto">
@@ -151,5 +129,6 @@
         </div>
             <a href="https://github.com/Santt-m"><img class="footer-img-git" src="./assets/img/footer/github.png" alt="github Logo"></a>
     </footer>
+    <script src="./main.js" type="module"></script>
 </body>
 </html>
